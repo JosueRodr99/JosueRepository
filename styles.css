@@ -1,0 +1,193 @@
+/* Paleta de colores */
+:root {
+    --bg-main: #181A1B;
+    --bg-section: #23272A;
+    --primary: #4F8CFF;
+    --primary-light: #A3BFFA;
+    --text-main: #F5F6FA;
+    --text-secondary: #B0B3B8;
+    --border: #31363B;
+    --radius: 1rem;
+    --font-main: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    margin-bottom: 1.2rem;
+}
+.hero h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0.2rem 0 0.5rem 0;
+}
+.hero h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--primary-light);
+    margin: 0 0 1rem 0;
+}
+.hero p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.7rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary:hover {
+    background: var(--primary-light);
+    color: var(--bg-main);
+}
+.btn-primary:active {
+    transform: scale(0.95);
+    transition: transform 0.08s;
+}
+.btn-secondary {
+    background: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    display: block;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--bg-main);
+    border-color: var(--primary-light);
+}
+section {
+    background: var(--bg-section);
+    border-radius: var(--radius);
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+}
+section h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+.tech-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+.tech-list img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #202328;
+    padding: 0.5rem;
+    border: 2px solid var(--border);
+}
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.project-card {
+    background: #202328;
+    border-radius: var(--radius);
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--border);
+}
+.project-card h4 {
+    margin: 0 0 0.3rem 0;
+    color: var(--primary-light);
+    font-size: 1.1rem;
+}
+.project-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.contact input,
+.contact textarea {
+    background: #202328;
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    resize: none;
+}
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+.success-message {
+    display: none;
+    color: var(--primary);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
+footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding: 2rem 0 1rem 0;
+    background: none;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 1rem 0.2rem 3rem 0.2rem;
+    }
+    section {
+        padding: 1.2rem 0.5rem;
+    }
+    .hero {
+        padding: 2rem 0 1rem 0;
+    }
+}

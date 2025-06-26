@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilberto Rodríguez | Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Gilberto" alt="Avatar animado" class="profile-img">
+            <h1>Gilberto Rodríguez</h1>
+            <h2>Desarrollador Web & Estudiante</h2>
+            <p>Apasionado por la tecnología y la creación de soluciones digitales.</p>
+            <a href="#contacto" class="btn-primary">Contáctame</a>
+        </section>
+        <section class="about" id="sobre-mi">
+            <button class="btn-secondary back-btn" onclick="window.location.hash=''">← Volver al inicio</button>
+            <h3>Sobre Mí</h3>
+            <p>Soy estudiante en Centro Supérate San Miguelito, enfocado en desarrollo web y siempre aprendiendo nuevas tecnologías. Me considero proactivo, curioso y con ganas de crecer profesionalmente.</p>
+        </section>
+        <section class="tech" id="tecnologias">
+            <button class="btn-secondary back-btn" onclick="window.location.hash=''">← Volver al inicio</button>
+            <h3>Tecnologías</h3>
+            <div class="tech-list">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+            </div>
+        </section>
+        <section class="projects" id="proyectos">
+            <button class="btn-secondary back-btn" onclick="window.location.hash=''">← Volver al inicio</button>
+            <h3>Proyectos</h3>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h4>Mi Primer Sitio Web</h4>
+                    <p>Un sitio web personal hecho con HTML, CSS y JS.</p>
+                </div>
+                <div class="project-card">
+                    <h4>App de Tareas</h4>
+                    <p>Aplicación para gestionar tareas diarias, usando Bootstrap.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Portafolio Creativo</h4>
+                    <p>Un portafolio interactivo y moderno.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contacto">
+            <button class="btn-secondary back-btn" onclick="window.location.hash=''">← Volver al inicio</button>
+            <h3>Contacto</h3>
+            <form id="contact-form">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+            <div id="contacto-exito" class="success-message">¡Gracias por tu mensaje!</div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Gilberto Rodríguez
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
